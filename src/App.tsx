@@ -9,6 +9,9 @@ import LeftSide from "./assets/body/LeftSide/LeftSide.tsx";
 import MiddleSide from "./assets/body/middleSide/middleSide.tsx";
 import SwitchLike from "./assets/body/SwitchLike/SwitchLike.tsx";
 import BtnAdd from "./assets/body/BtnAdd/BtnAdd.tsx";
+import Navbar from "./assets/body/ProductUser/Navbar/Navbar.tsx";
+import ProductItem from "./assets/body/ProductUser/ProductItem/ProductItem.tsx";
+import BtnClear from "./assets/body/ProductUser/BtnClear/BtnClear.tsx";
 
 
 function App() {
@@ -24,7 +27,10 @@ function App() {
 
     const [showAlert, setShowAlert] = useState(false)
     
-
+    
+    
+    const [itemShop, setItemShop] = useState(['item 1', 'item 2', 'item 3'])
+    
     return (
         <>
         
@@ -43,6 +49,11 @@ function App() {
             <SwitchLike onclickP={() => console.log('clicked')}></SwitchLike>
             <br/>
             <BtnAdd></BtnAdd>
+            <br/><br/>
+            
+            <Navbar coutItems={itemShop.length}></Navbar>
+            <ProductItem children={itemShop.map(item => <li>{item}</li>)}></ProductItem>
+            <BtnClear clearF={() => setItemShop([])}></BtnClear>
         </>
     );
 }

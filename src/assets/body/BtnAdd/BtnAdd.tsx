@@ -35,6 +35,7 @@ export default function BtnAdd() {
     }
     
 
+
     return(
         <div>
             {shoes.price}
