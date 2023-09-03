@@ -8,6 +8,7 @@ import RightSide from "./assets/body/RightSide/RightSide.tsx";
 import LeftSide from "./assets/body/LeftSide/LeftSide.tsx";
 import MiddleSide from "./assets/body/middleSide/middleSide.tsx";
 import SwitchLike from "./assets/body/SwitchLike/SwitchLike.tsx";
+import BtnAdd from "./assets/body/BtnAdd/BtnAdd.tsx";
 
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
             <MiddleSide></MiddleSide>
             <br/><br/><br/>
             <SwitchLike onclickP={() => console.log('clicked')}></SwitchLike>
+            <br/>
+            <BtnAdd></BtnAdd>
         </>
     );
 }
