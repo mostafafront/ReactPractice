@@ -12,6 +12,7 @@ import BtnAdd from "./assets/body/BtnAdd/BtnAdd.tsx";
 import Navbar from "./assets/body/ProductUser/Navbar/Navbar.tsx";
 import ProductItem from "./assets/body/ProductUser/ProductItem/ProductItem.tsx";
 import BtnClear from "./assets/body/ProductUser/BtnClear/BtnClear.tsx";
+import TextArea from "./assets/body/TextArea/TextArea.tsx";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     
     
     const [itemShop, setItemShop] = useState(['item 1', 'item 2', 'item 3'])
+    
     
     return (
         <>
@@ -54,6 +56,11 @@ function App() {
             <Navbar coutItems={itemShop.length}></Navbar>
             <ProductItem children={itemShop.map(item => <li>{item}</li>)}></ProductItem>
             <BtnClear clearF={() => setItemShop([])}></BtnClear>
+
+            <br/><br/><br/>
+            
+            <TextArea maxChar={10} key={'textvalue'}>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</TextArea>
+
         </>
     );
 }
