@@ -13,7 +13,7 @@ import Navbar from "./assets/body/ProductUser/Navbar/Navbar.tsx";
 import ProductItem from "./assets/body/ProductUser/ProductItem/ProductItem.tsx";
 import BtnClear from "./assets/body/ProductUser/BtnClear/BtnClear.tsx";
 import TextArea from "./assets/body/TextArea/TextArea.tsx";
-
+import Form from './assets/body/Form/Form.tsx'
 
 function App() {
     
@@ -61,6 +61,11 @@ function App() {
             
             <TextArea maxChar={10} key={'textvalue'}>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</TextArea>
 
+            
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            
+            <Form></Form>
+            
         </>
     );
 }
