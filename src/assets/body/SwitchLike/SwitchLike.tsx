@@ -8,13 +8,13 @@ interface Props{
 export default function SwitchLike(props:Props) {
 
 
-    const [person, setPerson] = useState({
-        name: '',
-        family:'',
-        address: {
-            aley: ''
-        }
-    })
+    // const [person, setPerson] = useState({
+    //     name: '',
+    //     family:'',
+    //     address: {
+    //         aley: ''
+    //     }
+    // })
     
     const [toggle, setToggle] = useState(false)
 

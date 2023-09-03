@@ -13,8 +13,17 @@ export default function BtnAdd() {
         }
     })
     
+    const [arr, setarr] = useState(['salam','aleik'])
+    
     function add() {
         setShoes({...shoes, price: 50, prop:{ ...shoes.prop, color: 'yellow'}, brand: 'adidas'})
+        
+        // Add
+        setarr([...arr, 'no'])
+        // remove
+        setarr(arr.filter(tag => tag !== 'salam'))
+        // Update
+        setarr(arr.map(tag => tag === 'aleik' ? 'khodafez' : tag))
     }
     
     return(
