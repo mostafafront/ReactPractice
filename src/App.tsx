@@ -14,7 +14,7 @@ import ProductItem from "./assets/body/ProductUser/ProductItem/ProductItem.tsx";
 import BtnClear from "./assets/body/ProductUser/BtnClear/BtnClear.tsx";
 import TextArea from "./assets/body/TextArea/TextArea.tsx";
 import Form from './assets/body/Form/Form.tsx'
-
+import Table from './assets/body/ExpenceTracker/Table.tsx'
 function App() {
     
     function changeAlert() {
@@ -32,6 +32,13 @@ function App() {
     
     const [itemShop, setItemShop] = useState(['item 1', 'item 2', 'item 3'])
     
+    
+    const userArray = [
+        {id: 1, Description: 'aaa', Amount: 12, Category: 'Geroceries' },
+        {id: 1, Description: 'aaa', Amount: 12, Category: 'Geroceries' },
+        {id: 1, Description: 'aaa', Amount: 12, Category: 'Geroceries' },
+        {id: 1, Description: 'aaa', Amount: 12, Category: 'Geroceries' }
+    ]
     
     return (
         <>
@@ -62,9 +69,16 @@ function App() {
             <TextArea maxChar={10} key={'textvalue'}>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumloremipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</TextArea>
 
             
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
             
             <Form></Form>
+            
+            <br/><br/><br/>
+            
+            <Table expense={}></Table>
+            
+            
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             
         </>
     );
