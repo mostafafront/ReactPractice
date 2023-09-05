@@ -17,6 +17,7 @@ import TextArea from "./assets/body/TextArea/TextArea.tsx";
 import Table from "./assets/body/ExpenceTracker/Table.tsx";
 import Filter from "./assets/body/ExpenceTracker/Filter.tsx";
 import FormExpense from "./assets/body/ExpenceTracker/FormExpense.tsx";
+import UseEffect from "./assets/useEffect/UseEffect.tsx";
 
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
     
     const visibleExpense = category && category !== "all" ? SelectedItem.filter((item) => item.category === category) : SelectedItem;
     
+    const [cat, setCat] = useState('')
+
     return (
         <>
             {showAlert && (
@@ -137,6 +140,15 @@ function App() {
             <br/>
             <br/>
         
+                    <UseEffect category={cat}></UseEffect>
+
+                    <select className="form-select" aria-label="Default select example" onChange={(event) => setCat(event.target.value)}>
+                <option selected>Open this select menu</option>
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+            </select>
+
         </>
     
     );
